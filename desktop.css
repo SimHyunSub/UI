@@ -1,0 +1,70 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+#div1 {
+    padding: 1%;
+    width: calc(300px - 2%);
+    height: 100vh;
+    background-color: aqua;
+    float: left;
+    position: fixed!important;
+}
+
+#div2 {
+    width: calc(100% - 340px);
+    padding: 20px 20px 20px 320px;
+    height: 200vh;
+    background-color: beige;
+}
+
+#x_btn {
+    border: 1px solid black;
+    float: right;
+    padding: 5%;
+    margin: 22.3% 10% 22.3% 0;
+    display: none;
+}
+
+#profile_img {
+    border-radius: 0.5em;
+    margin-left: 3%;
+}
+
+#my_portfolio {
+    padding: 10px;
+    height: 10vh;
+    background-color: blueviolet;
+}
+
+#mini_profile_img, #menu_btn {
+    display: none;
+}
+
+#menu_btn {
+    margin: 2%;
+}
+
+#mini_profile_img {
+    float: right;
+    margin: 1%;
+    height: 65px;
+    border-radius: 100%;
+}
+
+#my_portfolio > h2 {
+    margin: 0;
+}
+
+.p_list {
+    height: 20vh;
+    background-color: brown;
+}
+
+#p_list_paging {
+    height: 5vh;
+    text-align: center;
+    background-color: forestgreen
+}
+
