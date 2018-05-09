@@ -1,0 +1,17 @@
+.dls-third {
+    width: 100%;
+}
+
+.rows div {
+    width: 100%;
+    text-align: center;
+}
+
+#filter {
+    height: 40px;
+}
+
+#filter a{
+    font-size: 0.8em;
+}
+
