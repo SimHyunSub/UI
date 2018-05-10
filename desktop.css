@@ -137,5 +137,7 @@ footer > div {
     margin:auto;
     text-align: center;
     text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
 }
 
