@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimum-scale=1.0" />
 	<title> Title </title>
 	
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="dls.css">
 	<link rel="stylesheet" type="text/css" href="test.css">
 	<link rel="stylesheet" type="text/css" media = "only screen and (max-width: 768px)" href="tablet.css">
@@ -71,7 +72,7 @@
                 <article class="arc">
                     <div class="dls-third">
                         <div class="arc-box">
-                        <a href="#" ><img src="chef.jpg"></a>
+                        <a href="#" ><img src="java.jpg"></a>
                             <div class="arc-box-text">
                                 <h5>Python calc</h5>
                                 <p >zzzzzzzzzzzzzzzzzzzzzzzafsssasffffffffffffffffzzzzzzzzzzzzzasffffffffffffffffffffffffffffffffffffffffffffzzzz</p>
@@ -80,7 +81,7 @@
                     </div>
                     <div class="dls-third">
                         <div class="arc-box">
-                        <a href="#" ><img src="chef.jpg"></a>
+                        <a href="#" ><img src="python.jpg"></a>
                             <div class="arc-box-text">
                                 <h5>Python calc</h5>
                                 <p >zzzzzzzzzzzzzzasffffffzzzzzzzzzzzzzzzzzzzzzzzzzz</p>
@@ -89,7 +90,7 @@
                     </div>
                     <div class="dls-third">
                         <div class="arc-box">
-                        <a href="#" ><img src="chef.jpg"></a>
+                        <a href="#" ><img src="java.jpg"></a>
                             <div class="arc-box-text">
                                 <h5>Python calc</h5>
                                 <p >zzzzzzzzzzzzzzzzzzzsafssssssssssssssssssssssssdsdsdsdsdsdsdsdsdzzzzzzzzzzzzzzzzzzzzz</p>
@@ -101,7 +102,7 @@
                 <article class="arc">
                     <div class="dls-third">
                         <div class="arc-box">
-                        <a href="#" ><img src="chef.jpg"></a>
+                        <a href="#" ><img src="linux.png"></a>
                             <div class="arc-box-text">
                                 <h5>Python calc</h5>
                                 <p >zzzzzzzzzzzzzzzzzzzzafsssssssszzzzzzzzzzzzzzzzafasfasfasfzzzz</p>
@@ -110,7 +111,7 @@
                     </div>
                     <div class="dls-third">
                         <div class="arc-box">
-                        <a href="#" ><img src="chef.jpg"></a>
+                        <a href="#" ><img src="python.jpg"></a>
                             <div class="arc-box-text">
                                 <h5>Python calc</h5>
                                 <p >zzzzzzzzzzzzzzzzzzzafssssssssssssssssssasfzafsssssssssssssssssszzzzzzzzzzzzzzzzzzzz</p>
@@ -119,7 +120,7 @@
                     </div>
                     <div class="dls-third">
                         <div class="arc-box">
-                        <a href="#" ><img src="chef.jpg"></a>
+                        <a href="#" ><img src="linux.png"></a>
                             <div class="arc-box-text">
                                 <h5>Python calc</h5>
                                 <p >zzzzzzzzzzzzzzzzzzzzzasffffffffffffffffffffffffffffzzzzzzzzzzzzzzafsssssssssssssssssssssssssssszzzzz</p>
@@ -205,14 +206,15 @@
             
         </div>
         
+    <footer>
+        <div>
+            alright reserved @DLS alright reserved<br>
+            made by hyunsub, sewoong, jeongwon
+        </div>
+    </footer>
         
     </div>
     
-    <footer>
-        <div>
-            alright reserved  @sewoong,@shs,@jwalright reserved
-        </div>
-    </footer>
     
     
     
@@ -239,6 +241,19 @@ $(".pageMove").on("click",function(){
     window.scrollTo(0, $(target_id).offset().top);
 
 });
+    
+$(window).resize(function(){
+    var winWidth = $(window).width();
+    console.log(winWidth);
+    
+    if(winWidth < 1920 || winWidth >= 768){
+        var arrange = (winWidth - 1000) / 920;
+        
+        $("body").css("background-color", "rgb(0, 0, 0,"+arrange.toFixed(6)+")" );
+    }
+});
+
+
 
 </script>
 
