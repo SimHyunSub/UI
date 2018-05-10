@@ -1,6 +1,9 @@
 #left {
     display: none;
 }
+body {
+    width: 100%;
+}
 
 #right {
     width: calc(100% - 20px);
