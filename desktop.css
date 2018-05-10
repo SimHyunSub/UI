@@ -5,8 +5,9 @@ html, body, #container, h1, p, hr, h5 {
 html {
     box-sizing: border-box;
 }
+
 body {
-    width: 100vw;
+    width: 100%;
 }
 
 #container {
@@ -18,16 +19,10 @@ body {
 
 #left {
     width: 300px;
-    height: 80vh;
+    height: 100vh;
     float: left;
-    position: fixed;
-    top: 0;
-    background-color: #fff;
+    background-color: antiquewhite;
     
-}
-#left-1 div{
-    margin-left: 30px;
-    cursor: pointer;
 }
 
 #right {
@@ -36,30 +31,6 @@ body {
     background-color: aqua;
     padding: 10px;
 }
-#hp-left {
-    width: 85%;
-    float: left;
-}
-#leftMenu {
-    display: none;
-    width: 50px;
-}
-#leftMenu img{
-    width: 100%
-}
-
-#hp-right {
-    width: 15%;
-    float: right;
-    text-align: right;
-}
-
-#hp-right img{
-    width: 70px;
-    border-radius: 50%;
-    display: none;
-}
-
 /*
 #right div{
     margin-left: 2%
@@ -76,6 +47,11 @@ body {
     width: 100%;
 }
 
+#right-1 {
+    
+    background-color: fuchsia;
+    
+}
 #filter {
     margin-top:20px;
     margin-left: 5px;
@@ -98,10 +74,6 @@ body {
     background-color: #ebe6e6;
 }
 
-#div_hr {
-    clear: both;
-}
-
 #hp #div_hr > hr{
     height: 5px;
     background-color: black;
@@ -120,7 +92,6 @@ body {
 .dls-third img {
     margin-top: 20px;
     width: 100%;
-    height: 280px;
 }
 
 .arc-box {
@@ -146,76 +117,13 @@ body {
     -webkit-box-orient: vertical;
     word-wrap:break-word;
 }
-
-
 #page {
     clear: both;
     width: 40%;
     margin: 0 auto;
     text-align: center;
 }
-#about p{
-    width: 100%;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    word-wrap:break-word;
-}
 
-#skills h4{
-    margin: 10px 0 0;
-}
-
- .bar_100 {
- background-color: silver;
- }
-        
- .bar {
- height: calc(30px - 5px);
- padding-top: 5px;
- background-color: black;
- color: white;
- }
-
- .sub_bar_95 {width: 95%;}
- .sub_bar_85 {width: 85%;}
- .sub_bar_80 {width: 80%;}
-
-.rows {
-    width: 100%
-}
-.rows div {
-    display: inline-block;
-    float: left;
-    width: 33.333333%;
-    text-align: center;
-    padding-bottom: 40px
-}
-.dls-three p{
-    width: 100%;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    word-wrap:break-word;
-}
-#contact_info {
-    clear: both;
-    
-}
-#contact_info input {
-    width: 99%;
-    height: 30px;
-}
-#contact_info > :nth-child(7) {
-    width: 20%;
-    margin-top: 5px;
-}
-#contact_info h4 {
-    margin: 10px 0 0;
-}
 footer {
     background-color: firebrick;
     float: left;
@@ -225,7 +133,7 @@ footer {
 
 footer > div {
     height: inherit;
-    width: 100px;
+    width: 1000px;
     margin:auto;
     text-align: center;
     text-overflow: ellipsis;
