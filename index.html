@@ -5,15 +5,32 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimum-scale=1.0" />
 	<title> Title </title>
 	
+	<link rel="shortcut icon" href="img/icon_goodee.png">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="dls.css">
 	<link rel="stylesheet" type="text/css" href="desktop.css">
 	<link rel="stylesheet" type="text/css" media = "only screen and (max-width: 1259px)" href="laptop.css">
 	<link rel="stylesheet" type="text/css" media = "only screen and (max-width: 768px)" href="tablet.css">
 	<link rel="stylesheet" type="text/css" media = "only screen and (max-width: 425px)" href="mobile.css">
-	
+	<script src="lib/jquery.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<scropt src="smooth.js"></scropt>
+	
+	<!--글쓰기 버튼 ajax-->
+	<script>
+            $(document).ready(function(){
+                if(localStorage.getItem("url") == null){
+                    $("body").load("write.html");
+                }else{
+                    $("body").load(localStorage.getItem("url"));
+                }
+             $("#writebtn").click(function(e){
+                 $("body").load(e.target.value);
+                 localStorage.setItem("url", e.target.value);
+             });
+        });
+    </script>
+    
 </head>
 
 <body>
@@ -45,6 +62,7 @@
             </div>
             
         </div>
+        
         <div id="right">
             
             <!--  right-1 start -->
@@ -165,6 +183,10 @@
                 <div class="dls-padding-16" id="page">
                     &lt;&lt; 1 2 3 4 &gt;&gt;
                 </div>
+                
+                <div id="writebtn"  style="height: 5px; width: 20px; cursor: pointer;" value="write.html" >rmfaafa
+                    <!--<button type="button">글쓰기</button>-->
+                </div>
             </div>
             <!--  right-2 end  -->
             
@@ -248,13 +270,30 @@
         
     </div>
     
+<!--<script>
+$('#right-2').pagination({
+    dataSource: 'https://api.flickr.com/services/feeds/photos_public.gne?tags=cat&tagmode=any&format=json&jsoncallback=?',
+    locator: 'items',
+    totalNumber: 120,
+    pageSize: 20,
+    ajax: {
+        beforeSend: function() {
+            dataContainer.html('Loading data from flickr.com ...');
+        }
+    },
+    callback: function(data, pagination) {
+        // template method of yourself
+        var html = template(data);
+        dataContainer.html(html);
+    }
+})    
+</script>-->
     
     
     
 <script>
 $(window).resize(function(){
     var winWidth = $(window).width();
-    console.log(winWidth);
     
     if(winWidth < 1920 || winWidth >= 768){
         var arrange = (winWidth - 1000) / 920;

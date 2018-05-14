@@ -218,6 +218,15 @@ body {
     margin: 0 auto;
     text-align: center;
 }
+
+/* 글쓰기 버튼 */
+#writebtn {
+    text-align: right;
+    background-color: antiquewhite;
+    float: right;
+    
+    
+}
 #about p{
     width: 100%;
     overflow: hidden;
@@ -296,4 +305,5 @@ footer > div {
     text-align: center;
     padding-top: 34px
 }
+
 
