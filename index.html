@@ -4,21 +4,28 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimum-scale=1.0" />
 	<title> Title </title>
+	<!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
 	
 	<link rel="shortcut icon" href="img/icon_goodee.png">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="dls.css">
-	<link rel="stylesheet" type="text/css" href="desktop.css">
-	<link rel="stylesheet" type="text/css" media = "only screen and (max-width: 1259px)" href="laptop.css">
-	<link rel="stylesheet" type="text/css" media = "only screen and (max-width: 768px)" href="tablet.css">
-	<link rel="stylesheet" type="text/css" media = "only screen and (max-width: 425px)" href="mobile.css">
+	<link rel="stylesheet" type="text/css" href="css/dls.css">
+	<link rel="stylesheet" type="text/css" href="css/desktop.css">
+	<link rel="stylesheet" type="text/css" media = "only screen and (max-width: 1259px)" href="css/laptop.css">
+	<link rel="stylesheet" type="text/css" media = "only screen and (max-width: 768px)" href="css/tablet.css">
+	<link rel="stylesheet" type="text/css" media = "only screen and (max-width: 425px)" href="css/mobile.css">
 	<script src="lib/jquery.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<scropt src="smooth.js"></scropt>
-	
+		
 	<!--글쓰기 버튼 ajax-->
 	<script>
-            /*$(document).ready(function(){
+        /*
+            $(document).ready(function(){
                 if(localStorage.getItem("url") == null){
                     $("body").load("write.html");
                 }else{
@@ -28,7 +35,9 @@
                  $("body").load(e.target.value);
                  localStorage.setItem("url", e.target.value);
              });
-        });*/
+        });
+        
+        */
     </script>
     
 </head>
@@ -38,7 +47,7 @@
         <div id="left">
             
             <div id="img-box">
-                <img src="profile.jpg">
+                <img src="img/profile.jpg">
             </div>
             
             <div id="left-1">
@@ -71,7 +80,7 @@
                    <div id="hp-left">
                        
                         <div id="leftMenu">
-                            <img src="baseline-dehaze-24px.svg">
+                            <img src="./img/baseline-dehaze-24px.svg">
                         </div>
                         
                         <h1 id="portfolio">my portfolio</h1>
@@ -81,9 +90,12 @@
                             <a href="#">PYTHON</a>
                             <a href="#">LINUX</a>
                         </div>
-                   </div>
+                    </div>
                     <div id="hp-right">
-                        <img src="profile-2.jpg">
+                        <img src="./img/profile-2.jpg">
+                        <div id="login">
+                            <a href="#">login</a>
+                        </div>
                     </div>
                    <div id="div_hr">
                      <hr>
@@ -101,7 +113,7 @@
                     <div class="arc-con dls-third">
                         <div class="arc-box">
                             <div class="arc-box-img">
-                                <a href="#" ><img src="java.jpg"></a>
+                                <a href="#" ><img src="./img/java.jpg"></a>
                             </div>
                             <div class="arc-box-text">
                                 <h5>Python calc</h5>
@@ -114,7 +126,7 @@
                     <div class="arc-con dls-third">
                         <div class="arc-box">
                             <div class="arc-box-img">
-                                <a href="#" ><img src="java.jpg"></a>
+                                <a href="#" ><img src="img/java.jpg"></a>
                             </div>
                             <div class="arc-box-text">
                                 <h5>Python calc</h5>
@@ -127,7 +139,7 @@
                     <div class="arc-con dls-third">
                         <div class="arc-box">
                             <div class="arc-box-img">
-                                <a href="#" ><img src="java.jpg"></a>
+                                <a href="#" ><img src="img/java.jpg"></a>
                             </div>
                             <div class="arc-box-text">
                                 <h5>Python calc</h5>
@@ -143,7 +155,7 @@
                     <div class="arc-con dls-third">
                         <div class="arc-box">
                             <div class="arc-box-img">
-                                <a href="#" ><img src="java.jpg"></a>
+                                <a href="#" ><img src="img/java.jpg"></a>
                             </div>
                             <div class="arc-box-text">
                                 <h5>Python calcasdasdasdsadasdasdasdsadasd</h5>
@@ -156,7 +168,7 @@
                     <div class="arc-con dls-third">
                         <div class="arc-box">
                             <div class="arc-box-img">
-                                <a href="#" ><img src="java.jpg"></a>
+                                <a href="#" ><img src="img/java.jpg"></a>
                             </div>
                             <div class="arc-box-text">
                                 <h5>Python calc</h5>
@@ -169,7 +181,7 @@
                     <div class="arc-con dls-third">
                         <div class="arc-box">
                             <div class="arc-box-img">
-                                <a href="#" ><img src="java.jpg"></a>
+                                <a href="#" ><img src="img/java.jpg"></a>
                             </div>
                             <div class="arc-box-text">
                                 <h5>Python calc</h5>
@@ -180,13 +192,14 @@
                     
                 </article>
                 
+                <div id="writebtn">
+                    <button type="button">글쓰기</button>
+                </div>
+                
                 <div class="dls-padding-16" id="page">
                     &lt;&lt; 1 2 3 4 &gt;&gt;
                 </div>
                 
-                <div id="writebtn"  style="height: 5px; width: 20px; cursor: pointer;" value="write.html" >rmfaafa
-                    <!--<button type="button">글쓰기</button>-->
-                </div>
             </div>
             <!--  right-2 end  -->
             
@@ -261,53 +274,40 @@
             
         </div>
         
-    <footer>
-        <div>
-            alright reserved @DLS alright reserved<br>
-            made by hyunsub, sewoong, jeongwon
-        </div>
-    </footer>
+        <footer>
+            <div>
+                alright reserved @DLS alright reserved<br>
+                made by hyunsub, sewoong, jeongwon
+            </div>
+        </footer>
+    </div>
+   
+   
+    <div id="login-box">
+        
+        <form>
+            <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                <input id="email" type="text" class="form-control" name="email" placeholder="Email">
+            </div>
+            <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                <input id="password" type="password" class="form-control" name="password" placeholder="Password">
+            </div>
+            <div class="login-btn-box">
+            <input type="button" id="joinBtn" class="btn btn-default" value="Join">
+            <input type="submit" class="btn btn-info" value="Login">
+            </div>
+        </form>
         
     </div>
     
-<!--<script>
-$('#right-2').pagination({
-    dataSource: 'https://api.flickr.com/services/feeds/photos_public.gne?tags=cat&tagmode=any&format=json&jsoncallback=?',
-    locator: 'items',
-    totalNumber: 120,
-    pageSize: 20,
-    ajax: {
-        beforeSend: function() {
-            dataContainer.html('Loading data from flickr.com ...');
-        }
-    },
-    callback: function(data, pagination) {
-        // template method of yourself
-        var html = template(data);
-        dataContainer.html(html);
-    }
-})    
-</script>-->
-    
-    
-    
-<script>
-$(window).resize(function(){
-    var winWidth = $(window).width();
-    
-    if(winWidth < 1920 || winWidth >= 768){
-        var arrange = (winWidth - 1000) / 920;
-        
-        $("body").css("background-color", "rgb(0, 0, 0,"+arrange.toFixed(6)+")" );
-    }
-    /*if(768 < winWidth && winWidth < 1260){
-        $(".arc-con").removeClass("dls-third").addClass("dls-bi");
-    }else if( winWidth >= 1260){
-        $(".arc-con").removeClass("dls-bi").addClass("dls-third");
-    }*/
-});
+    <!-- 레이어 -->
+    <div id="layer"></div>
 
-</script>
+    
+    
+<script src="js/main.js"></script>
 
 </body>
 </html>

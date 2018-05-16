@@ -1,220 +1,55 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title> Title </title>
-	
+<head>	
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="dls.css">
-	<link rel="stylesheet" type="text/css" href="desktop.css">
-	<link rel="stylesheet" type="text/css" media = "only screen and (max-width: 1259px)" href="laptop.css">
-	<link rel="stylesheet" type="text/css" media = "only screen and (max-width: 768px)" href="tablet.css">
-	<link rel="stylesheet" type="text/css" media = "only screen and (max-width: 425px)" href="mobile.css">
-	
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<scropt src="smooth.js"></scropt>
-	<style>
-        ul {
-            padding-left: 0; 
-            list-style: none;
-            position: fixed;
-        }
-        
-        /* write.html 시작 */
-
-        .write-hp {
-            height: 116px;
-            padding-top: 50px;
-        }
-        .write-img {
-            position: relative;
-            bottom: calc(169px - 79.55px);
-        }
-        
-        #menu li > a{
-            text-decoration: none;
+   
+    <link rel="stylesheet" href="css/write.css">
             
-        }
-        #menu #submenu {
-            display: none;
-        }
-        #menu li:hover > #submenu {
-            display: block;
-        }
-        /*#write-cate {
-            display: inline-block;
-            float: left;
-        }*/
-        
-        #write-box{
-            width: 100%;
-            text-align: center;
-        }
-        
-        #textbox {
-            width:80%;
-            height: 500px;
-            border: 2px solid;
-        }
-        
-        .fileBox {
-            text-align: center;
-        }
-        
-        .fileBox .fileName {
-            width:190px;
-            height:30px;
-            
-            display:inline-block;
-            padding-left:10px;
-            margin-right:5px;
-            line-height:30px;
-            border:1px solid #aaa;
-            background-color:#fff;
-            vertical-align:middle
-        }
-        .fileBox .btn_file {
-            width:100px;
-            height:30px;
-            
-            display:inline-block;
-            border:1px solid #000;
-            font-size:0.8em;
-            line-height:30px;
-            text-align:center;
-            vertical-align:middle
-        }
-        .fileBox input[type="file"] {
-            width:1px;
-            height:1px;
-            
-            position:absolute;
-            padding:0;
-            margin:-1px;
-            overflow:hidden;
-            clip:rect(0,0,0,0);
-            border:0
-        }
-    </style>
 </head>
 
-<body id="write-body">
+
     <div id="container">
-        
-         <div id="left">
-            <div id="img-box">
-                <img src="profile.jpg">
-            </div>
-        </div>
-        
-        <div id="right">
-            
-              <div id="right-1" class="write-hp">
-                <hgroup id="hp">
-                        <h1 id="portfolio">my portfolio</h1>
-                        
-                    <div id="hp-right" class="write-img" >
-                        <img src="profile-2.jpg">
-                    </div>
-                   <div id="div_hr">
-                     <hr>
-                   </div>
-                </hgroup>
-            </div>
-            
+         <h1>글작성</h1>
+           
             <!--작성하는 부분 시작.-->
             <!--제목, 카테고리-->
-            <div id="wirte-1">
-                <div id="wirte-title">
-                    <input type="text" name="title" placeholder="제목작성">
-                </div>
                 
-                <div id="write-cate">
-                   <p>Choose your category</p>
+            <div id="write-cate">
                     <ul id="menu">
-                        <li><a href="#">Python</a>
+                        <li><a href="#">Choose your category</a>
                             <ul id="submenu">
                                 <li><a href="#">Java</a></li>
                                 <li><a href="#">Linux</a></li>
                             </ul>
                         </li>
                     </ul>
+            </div>
+            
+            <div id="write-1">
+                <div id="write-title">
+                    <input type="text" name="title" placeholder="제목작성">
                 </div>
             </div>
             
             <!--로직-->
             <div id="write-box">
                 <textarea id="textbox" rows="40" cols="100">
-                    
-            a = ''' 
-                          [자판기]
-               -------------------------------
-                 1        2        3       4
-               -------------------------------
-               [콜라]  [캔커피]  [포카리]  [물]
-               900원    600원    1500원   500원
-               -------------------------------
-               '''
-            '''
-            coke = 900
-            can = 600
-            pokari = 1500
-            water = 500
-            '''
-
-            d = [900,600,1500,500]
-
-            print(a)
-
-            while True:
-                a = int(input("번호를 골라주세요\n"))
-                if a == 1 : 
-                    b1 = int(input("지불하실 금액을 넣어주세요(숫자만)\n"))
-                    print("콜라를 고르셨습니다.\n")
-                    if b1 < d[0] :
-                        print("돈이 부족합니다\n")
-                    else :
-                        print("거스름돈은" + str(b1 - d[0]) + "원 입니다.\n" )
-                elif a == 2 :
-                    b2 = int(input("지불하실 금액을 넣어주세요(숫자만)\n"))
-                    print("캔커피를 고르셨습니다.\n")
-                    if b2 < d[1] :
-                        print("돈이 부족합니다\n")
-                    else :
-                        print("거스름돈은" + str(b2 - d[1]) + "원 입니다.\n" )
-                elif a == 3 :
-                    b3 = int(input("지불하실 금액을 넣어주세요(숫자만)\n"))
-                    print("포카리를 고르셨습니다.\n")
-                    if b3 < d[2] :
-                        print("돈이 부족합니다")
-                    else:
-                        print("거스름돈은" + str(b3 - d[2]) + "원 입니다.\n" )
-                elif a == 4 :
-                    b4 = int(input("지불하실 금액을 넣어주세요(숫자만)\n"))
-                    print("물을 고르셨습니다.\n")
-                    if b4 < d[3] :
-                        print("돈이 부족합니다\n")
-                    else :
-                        print("거스름돈은" + str(b4 - d[3]) + "원 입니다.\n" )
-                elif a > 4 :
-                    print("자판기가 터졌습니다.\n")
-                    break
-
-
-
-
+                
                 </textarea>
             </div>
             
             <!--로직 실행 이미지 첨부-->
             
             <div class="fileBox">
+               
                 <input type="text" class="fileName" readonly="readonly" placeholder="이미지파일 첨부">
+                
                 <label for="uploadBtn" class="btn_file">찾아보기</label>
+                
                 <input type="file" id="uploadBtn" class="uploadBtn">
             </div>
-           
+            
+            <div id="write-bottom">
+                <a href="index.html">홈으로</a>
+            </div>
             <!--로직 설명 작성-->
             <div>
                 
@@ -226,6 +61,3 @@
             </div>
         </div>
         
-    </div>
-</body>
-</html>

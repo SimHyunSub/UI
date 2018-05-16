@@ -1,0 +1,67 @@
+
+form {
+    width: 80%;
+    margin: 0 auto;
+}
+h1 {
+    text-align: center;
+}
+
+#join-1 {
+    width: 100vw;
+    height: 50vh;
+    
+    min-width: 700px;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-color: #d1d1d1;
+}
+
+.div{
+    width: 100%;
+    float: left;
+    margin-top: 10px;
+}
+
+p {
+    width: 130px;
+        
+    font-size: 1em;
+    margin: 0;
+    display: inline-block;
+    margin-left: 80px;
+}
+
+div input{
+    width: 400px;
+    height: 40px;
+    
+    margin-left: 30px;
+}
+#join-bottom {
+    float: left;
+    margin-top: 40px;
+}
+
+#join-bottom a{
+    text-decoration: none;
+    color: black;
+    margin-left: 80px;
+}
+#join-bottom a:hover{
+    background-color: black;
+    color: white;
+}
+
+#btn-next {
+    width: 200px;
+    height: 60px;
+    
+    text-align: center;
+    margin-left: 210px;
+    background-color: rgb(51,51,51);
+    font-size: 1.3em;
+    border-radius: 10px;
+    color: white
+    
+}
