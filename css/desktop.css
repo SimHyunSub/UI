@@ -233,6 +233,10 @@ body {
 }
 
 /* 글쓰기 버튼 */
+#writebtn {
+    display: none;
+}
+
 #writebtn > button {
     text-align: center;
     background-color: rgb(51,51,51);
@@ -370,3 +374,6 @@ footer > div {
     opacity: 0.7;
     display: none;
 }
+
+/****************************/
+

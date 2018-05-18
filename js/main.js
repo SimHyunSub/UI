@@ -17,24 +17,41 @@ $("#writebtn").on("click", function(){
     $(".write-body").load("write.html");
 });
 
+$("#loginBtn").on("click", function(){
+     layerOut();
+    console.log("1");
+     $("#writebtn").css("display", "block");
+    return false;
+});
+
 /* 회원가입 ajax */
 $("#joinBtn").on("click", function(){
     layerOut();
-    
-    /*$("#right-2").css("display", "none");
-    $("#right-3").css("display", "none");
-    $("#right-4").css("display", "none");
-    ----위의 세줄이 있으면 밑에서 empty()함수가 잘 안먹어서 주석처리-----
-    */
-    
     var html = '<div class="join-form">';
     
-    $("#right-2").empty().append(html);
-    $("#right-3").empty();
-    $("#right-4").empty();
-    $(".join-form").load("join.html");
-    
+            $("#right-2").hide();
+            $("#right-3").hide();
+            $("#right-4").hide();
+            
+            $("#temp_div").append(html);
+            $(".join-form").load("join.html");
+            $("#temp_div").show();
+    console.log($("#temp_div"));
 });
+
+/*nav에 버튼 클릭 했을경우 (portfolio..등등)*/
+
+ $(".sh").on("click", function(){
+       
+     $("#right-2").show();
+     $("#right-3").show();
+     $("#right-4").show();
+     $("#temp_div").empty().hide();
+     
+     console.log($("#temp_div"));
+ });
+
+
 
 
 /* 공통부분 */
@@ -43,3 +60,4 @@ function layerOut(){
     $("#container").css("opacity", "1");
     $("#login-box").css("display", "none");
 }
+
