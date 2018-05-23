@@ -1,0 +1,40 @@
+#left {
+    display: none;
+}
+body {
+    width: 100%;
+}
+
+#right {
+    /*width: calc(100% - 20px);*/
+    width: 100%;
+}
+
+#hp {
+    height: 100px;
+}
+
+#hp-right img {
+    display: block;
+    float: right;
+    margin-right: 10px;
+}
+
+#leftMenu {
+    display: block;
+    
+}
+
+/* 포트폴리오 컨텐츠 하나하나를 감싸는 DIV 컨텐츠의 width에 영향 */
+.arc-box {
+    width: 95%;
+    min-width: 180px;
+}
+
+.arc-box img {
+    width: 100%;
+}
+
+footer, footer > div {
+    width: 100%;
+}
