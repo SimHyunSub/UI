@@ -1,101 +1,41 @@
-#write-1{
-    margin-top: 40px;
-    margin-left: 59px;
-    margin-bottom: 5px;
-}
-#write-title input{
-    height: 40px;
-    width: 200px;
-}
-
-
-ul {
-    padding-left: 0; 
-    list-style: none;
-}
-        
-h1 {
-    text-align: center;
-}
-        /* write.html 시작 */
-#write-cate {
+.wrap-all-con {
     width: 100%;
-    height: 100px;
-    margin-left: 59px;
-    
 }
 
-#menu li > a{
-    text-decoration: none;
-}
-#menu #submenu {
-    display: none;
-}
-#menu li:hover > #submenu {
-    display: block;
-}
-        
-#write-box{
+.top-img {
     width: 100%;
-    margin-left: 59px;
+    height: 300px;
+    background-image: url('../img/img_main_picture-big.jpg');
+    background-position: center;
+    background-size: cover;
 }
-        
-#textbox {
-    width:80%;
-    height: 500px;
-    border: 1px solid;
-    
+
+.write-con {
+    padding: 10px;
+    width: 60%;
+    min-width: 300px;
+    margin: -150px auto;
 }
-        
-.fileBox {
+
+.select-write-type {
+    margin-bottom: 10px;
+}
+
+.write-title-con {
+    margin-bottom: 10px;
+}
+
+.write-button-con {
+    width: 100%;
     text-align: center;
-}
-        
-.fileBox .fileName {
-    width:190px;
-    height:40px;
-    
-    display:inline-block;
-    padding-left:10px;
-    margin-right:5px;
-    line-height:30px;
-    border:1px solid #aaa;
-    background-color:#fff;
-    vertical-align:middle
-}
-.fileBox .btn_file {
-    width:100px;
-    height:30px;
-            
-    display:inline-block;
-    border:1px solid #000;
-    font-size:0.8em;
-    line-height:30px;
-    text-align:center;
-    vertical-align:middle
+    margin-bottom: 30px;
 }
 
-.fileBox input[type="file"] {
-    width:1px;
-    height:1px;
-    
-    position:absolute;
-    padding:0;
-    margin:-1px;
-    overflow:hidden;
-    clip:rect(0,0,0,0);
-    border:0
-}
-#write-bottom a{
-    text-decoration: none;
-    color: black;
-    margin-left: 80px;
-}
-#write-bottom a:hover{
-    background-color: black;
-    color: white;
+.write-button-con > input[type='button'] {
+    width: 10%;
+    min-width: 100px;
 }
 
-        
-
-
+#write-input-file {
+     width: 250px;   
+}

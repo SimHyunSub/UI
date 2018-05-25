@@ -19,34 +19,9 @@ $("#loginBtn").on("click", function(){
 /* 회원가입 ajax */
 $("#joinBtn").on("click", function(){
     layerOut();
-    
-    
-    /*
-    $("#temp_div").empty();
-    var html = '<div class="join-form">';
-    
-    $("#right-2").hide();
-    $("#right-3").hide();
-    $("#right-4").hide();
-            
-    $("#temp_div").append(html);
-    $(".join-form").load("join.html");
-    $("#temp_div").show();
-    console.log($("#temp_div"));
-    */
 });
 
 /*nav에 버튼 클릭 했을경우 (portfolio..등등)*/
-
- $(".sh").on("click", function(){
-       
-     $("#right-2").show();
-     $("#right-3").show();
-     $("#right-4").show();
-     $("#temp_div").empty().hide();
-     
-     console.log($("#temp_div"));
- });
 
 $("#joinBtn").on("click", function(){
     $("#layer").css("display", "block");
@@ -78,17 +53,62 @@ $("#logout").on("click", function(){
     location.href = 'index.html';
 });
 
+
 $(".arc-box-img").on("click" , function(){
     location.href = "detail.html";
 });
 
-$("#detail-list").on("click" , function(){
+/*현섭 작업중*/
+var html = "";
+function rea() {
+    html += '<a href ="#">java.jpg</a>';
+    $("#template").append(html);
+}
 
+
+
+$("#detail-list").on("click" , function(){
     location.href = "index.html";
 });
 
 $("#writebtn").on("click" , function(){
     location.href = "write.html";
 });
+
+
+
+$("#leftMenu").on("click" , function(e){
+    $("#left-copy").css("display","block").css("z-index","5005").css("width","200px").css("height","auto").css("padding-bottom", "15px");
+    e.stopPropagation();
+});
+$("#right:not(#leftMenu1)").on("click", function(){
+            $("#left-copy").hide(300);
+});
+
+$(window).on("resize", function(){
+    var width = $(window).width();
+    console.log(width);
+    if(width < 768){
+        $("#left-copy").hide();
+        $("#right:not(#leftMenu1)").on("click", function(){
+            console.log($(this));
+            console.log("띠로리리리리");
+            $("#left-copy").hide(300);
+        });
+    }
+});
+
+/*
+
+var html = ''<a href ="#">java.jpg</a>';
+function onLoad(){
+    
+    document.getElementById("template").innerHTML = html;
+}
+*/
+
+
+
+
 
 

@@ -25,3 +25,15 @@ footer, footer > div {
 .dls-third {
     margin: 0;
 }
+
+#login-box {
+    height: 180px;
+}
+
+#login {
+    margin-left: -10px;
+}
+
+#logout a, #login a {margin-left: -24px;}
+
+#logout a {margin-top: 5px;}

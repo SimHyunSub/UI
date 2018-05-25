@@ -7,11 +7,9 @@
 
 .msg-table {
     width: 100%;
-    
     max-width: 100%;
     margin-bottom: 20px;
     border-collapse: collapse;
-    
 }
 
 .msg-table>thead>tr>th {

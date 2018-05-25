@@ -22,24 +22,6 @@
 	<link rel="stylesheet" type="text/css" media = "only screen and (max-width: 425px)" href="css/mobile.css">
 	<script src="lib/jquery.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		
-	<!--글쓰기 버튼 ajax-->
-	<script>
-        /*
-            $(document).ready(function(){
-                if(localStorage.getItem("url") == null){
-                    $("body").load("write.html");
-                }else{
-                    $("body").load(localStorage.getItem("url"));
-                }
-             $("#writebtn").click(function(e){
-                 $("body").load(e.target.value);
-                 localStorage.setItem("url", e.target.value);
-             });
-        });
-        
-        */
-    </script>
     
 </head>
 
@@ -51,21 +33,21 @@
                 <img src="img/profile.jpg">
             </div>
             
-            <div id="left-1">
+            <div class="left-1">
                 <div>
-                    <a href="index.html#right-1" class="sh">
+                    <a href="index2.html#right-1" class="sh">
                         <h3 class="pageMove">portfolio</h3>
                     </a>
                 </div>
                 
                 <div>
-                    <a href="index.html#right-3" class="sh">
+                    <a href="index2.html#right-3" class="sh">
                         <h3 class="pageMove">about</h3>
                     </a>
                 </div>
                 
                 <div>
-                    <a href="index.html#right-4" class="sh">
+                    <a href="index2.html#right-4" class="sh">
                         <h3 class="pageMove">contact</h3>
                     </a>
                 </div>
@@ -121,7 +103,7 @@
                     </div>
                     <div class="myinfo-box-contents-row">
                         <div class="contents-row-left">
-                            <p>비밀번호</p>
+                            <p>비밀번호 :</p>
                         </div>
                         <div class="contents-row-right">
                             <input type="button" id="change-btn" class="btn btn-info" value="비밀번호 수정">
@@ -157,8 +139,8 @@
                     <h3>비밀번호 변경</h3><br>
                 </div>
                 <div class="input-group join-box-input">
-                    <input type="text" class="form-control" id="change_pw" name="pass" placeholder="변경하실 비밀번호를 입력하세요.">
-                    <input type="text" class="form-control" id="change_pw_check" placeholder="비밀번호 확인">
+                    <input type="password" class="form-control" id="change_pw" name="pass" placeholder="변경하실 비밀번호를 입력하세요.">
+                    <input type="password" class="form-control" id="change_pw_check" placeholder="비밀번호 확인">
                 </div>
                 <div class="join-btn-box">
                 <input type="submit" id="submit_change" class="btn btn-success" value="변경">
@@ -169,6 +151,33 @@
         <!-- 레이어 -->
         <div id="layer"></div>
         
+        <div id="left-copy" class="ani">
+            <div class="left-1">
+                <div>
+                    <a href="index2.html#right-1">
+                        <h3 class="pageMove">portfolio</h3>
+                    </a>
+                </div>
+                
+                <div>
+                    <a href="index2.html#right-3" >
+                        <h3 class="pageMove">about</h3>
+                    </a>
+                </div>
+                
+                <div>
+                    <a href="index2.html#right-4" >
+                        <h3 class="pageMove">contact</h3>
+                    </a>
+                </div>
+                
+                <div>
+                    <a href="myinfo.html">
+                        <h3 class="pageMove">my info</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
         
         
         <footer>

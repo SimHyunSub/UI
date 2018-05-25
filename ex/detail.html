@@ -10,25 +10,17 @@
     <script src="lib/jquery.min.js"></script>
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	
 	<!-- include summernote css/js -->
     <link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote.css" rel="stylesheet">
     <script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote.js"></script>
-    
-	
 	<link rel="shortcut icon" href="img/icon_goodee.png">
     <link rel="stylesheet" type="text/css" href="css/detail.css">
-    
 </head>
-
 <body>
-    
     <div class="wrap-all-con">
-       
         <div class="top-img"></div>
-        
         <div class="write-con">
-           
+            <!-- 카테고리 -->
             <div class="select-write-type">
             <select class="form-control" id="sel1" disabled>
                 <option disabled selected>Category</option>
@@ -38,34 +30,35 @@
                 <option>HTML</option>
                 <option>CSS</option>
                 <option>LINUX</option>
-            </select>  
+            </select>
+                <!-- 상세 내용 부분 -->
             </div>
             <div class="summernote-con">
-                   <p>나는 심현섭입니다.</p>
-                   <p>지금부터 너희들에게 자바를 알려주겠다.지금부터 너희들에게 자바를 알려주겠다.지금부터 너희들에게 자바를 알려주겠다.지금부터 너희들에게 자바를 알려주겠다.지금부터 너희들에게 자바를 알려주겠다.지금부터 너희들에게 자바를 알려주겠다.지금부터 너희들에게 자바를 알려주겠다.지금부터 너희들에게 자바를 알려주겠다.지금부터 너희들에게 자바를 알려주겠다.</p>
-                   <p>자바란?</p>
-                   <p>자바란?</p>
-                   <p>자바란?</p>
-                   <p>자바란?</p>
-                   <p>자바란?</p>
-                   <p>자바란?</p>
-                   <p>자바란?</p>
-                   <p>자바란?</p>
-                   <p>자바란?</p>
-                   <p>자바란?</p>
-                   <p>자바란?</p>
-                   <p>자바란?</p>
-                   <p>자바란?</p>
-                   <p>자바란?</p>
+                   <p>
+                       특징
+                        반환값이 없는 메소드는 생성자가 유일하다.
+                        생성자는 인스턴스를 생성해주는 역할을 하는 특수한 메소드라고 할 수 있다. 반환값이 없기 때문에 
+                        return도 사용하지 않고, 반환 값 타입을 메소드 정의 포함시키지도 않는다.
+
+                        클래스에는 반드시 생성자가 존재해야 한다.
+                        인스턴스 생성시 딱 한번 호출 된다.
+                        인스턴스 변수의 초기화가 목적이다.
+                        클래 이름과 동일한 이름을 가진 메소드이다.
+                        반환형이 존재하지 않는다. 즉 return이 없다.
+                        
+                        클래스명 참조변수=new 클래스명(초기화 변수)
+                   </p>
                    
             </div>
-            
-            
             <div class="write-button-con">
+                <div id="template">
+                    
+                </div>
                 <input type="button" class="btn btn-primary" id="detail-list" value="목록">
+                <input type="button" class="btn btn-primary" value="수정">
                 <input type="button" class="btn btn-primary" value="삭제">
             </div>
-            
+            <!-- 댓글 작성 부분 -->
             <div class="reply-box">
                 <div class="box-top">
                     <div class="top-left">
@@ -82,7 +75,7 @@
                     <input type="button" class="btn btn-default" value="등록">
                 </div>
             </div>
-            
+            <!-- 작성한 댓글 리스트 -->
             <div class="comment">
                 <div class="comment-top">
                     <div class="comment-top-left"><span>작성자</span></div>
@@ -122,10 +115,12 @@
             </div>
         </div>
     </div>
-
-<script src="js/main.js"></script>
-<script>
+    <script src="js/main.js"></script>
     
-</script>
+    <script>
+        /*rea();*/
+        
+        onload();
+    </script>
 </body>
 </html>

@@ -9,25 +9,29 @@
 #admin-top {
     width: 100%;
 }
+
 #admin-left {
     float: left;
 }
+
 #admin-right {
     float: right;
 }
+
 #confirm, #cancle {
     float: right;
     margin-left: 5px;
     display: none;
 }
+
 .admin-table {
     width: 100%;
     min-width: 430px;
     max-width: 100%;
     margin-bottom: 20px;
     border-collapse: collapse;
-    
 }
+
 .admin-table>thead>tr>th {
     padding: 8px;
     line-height: 1.42;
@@ -51,8 +55,8 @@
     line-height: 1.42;
     text-align: left;
     border-top: 1px solid #ccc;
-    /*border-bottom: 1px solid #ccc;*/
 }
+
 .admin-table>tbody>tr:nth-child(even) {
     background-color: #f8f8f8;
 }
